@@ -11,7 +11,7 @@
     </head>
     <body>
         <div id="app">
-            <router-view></router-view>
+            <App></App>
         </div>
         <script src="js/app.js"></script>
         <!-- JavaScript Bundle with Popper -->
