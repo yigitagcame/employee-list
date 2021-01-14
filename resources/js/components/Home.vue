@@ -20,7 +20,7 @@
                         </thead>
                         <tbody>
                             <tr v-for="(employee,index) in employees" :key="employee.id">
-                                <td><img v-bind:src="'/uploads/'+employee.photo" width="50" height="50"></td>
+                                <td><img v-bind:src="employee.photo" width="50" height="50"></td>
                                 <td>{{employee.name}}</td>
                                 <td>{{employee.surname}}</td>
                                 <td><router-link class="btn btn-warning" :to="'/edit/'+employee.id"> View & Edit</router-link></td>

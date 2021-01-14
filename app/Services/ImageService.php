@@ -8,15 +8,16 @@ class ImageService{
     public function upload($file)
     {
         $name = time().'.'.$file->extension();
+        $folder = '/uploads/';
 
-        $file->move(public_path('uploads'), $name);
+        $file->move(public_path($folder), $name);
 
-        return $name;
+        return $folder.$name;
     }
 
     public function remove($file)
     {
-        File::delete(public_path('uploads').'/'.$file);
+        File::delete(public_path($file));
     }
 
 

@@ -26,7 +26,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Photo</label>
-                                <div><img v-bind:src="'/uploads/'+employee.photo"></div>
+                                <div><img v-bind:src="employee.photo"></div>
                                 <input type="file" ref="file" class="form-control-file">
                                 <small id="emailHelp" class="form-text text-muted">Max 2048 KB. JPG, JPEG or PNG</small>
                             </div>
